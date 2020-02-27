@@ -26,7 +26,7 @@
                     <label class="form-head" for="to-do">To-Do: </label>
                     <div class="form">
                         <input type="text" class="form-control" id="to-do" name="to-do">
-                        <button id="to-do-submit" type="submit" class="btn btn-light">Submit</button>
+                        <button v-on:click.prevent="" id="to-do-submit" type="submit" class="btn btn-light">Submit</button>
                     </div>
                 </div>
             </form>
@@ -36,7 +36,6 @@
         </main>
     </div>
     <script src="scripts/index.js"></script>
-    <script src="scripts/bootstrap.js"></script>
 </body>
 
 </html>
