@@ -32,8 +32,8 @@
             </form>
             <div id="main-content">
                 <ul id="to-dos">
-                    <li v-for="todo in todos" :key="todos">
-                        {{todos}}
+                    <li v-for="(todo, index) in todos" :key="todo">
+                        {{todo}}
                     </li>
                 </ul>
             </div>
