@@ -23,15 +23,19 @@
         <main class="col-lg-10">
             <form>
                 <div class="form-group">
-                    <label class="form-head" for="to-do">To-Do:  <p class="input">{{input}}</p></label>
+                    <label class="form-head" for="to-do">To-Do:  <p class="input">{{message}}</p></label>
                     <div class="form">
-                        <input v-model="input" type="text" class="form-control" ref="" id="to-do" name="to-do">
-                        <button v-on:click.prevent="" id="to-do-submit" type="submit" class="btn btn-light">Submit</button>
+                        <input v-model="message" type="text" class="form-control" ref="input" id="to-do" name="to-do">
+                        <button v-on:click="reference()" v-on:click.prevent="" id="to-do-submit" type="submit" class="btn btn-light">Submit</button>
                     </div>
                 </div>
             </form>
             <div id="main-content">
-
+                <ul id="to-dos">
+                    <li v-for="todo in todos" :key="todos">
+                        {{todos}}
+                    </li>
+                </ul>
             </div>
         </main>
     </div>
