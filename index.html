@@ -23,9 +23,9 @@
         <main class="col-lg-10">
             <form>
                 <div class="form-group">
-                    <label class="form-head" for="to-do">To-Do: </label>
+                    <label class="form-head" for="to-do">To-Do:  <p class="input">{{input}}</p></label>
                     <div class="form">
-                        <input type="text" class="form-control" id="to-do" name="to-do">
+                        <input v-model="input" type="text" class="form-control" ref="" id="to-do" name="to-do">
                         <button v-on:click.prevent="" id="to-do-submit" type="submit" class="btn btn-light">Submit</button>
                     </div>
                 </div>
