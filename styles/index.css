@@ -1,2 +1,12 @@
+.body {
+  background-color: #E2E2E2;
+}
 
+header {
+  background-color: #6BFF7E;
+  box-shadow: inset -2px -2px 15px #070707;
+  padding: 2%;
+  text-decoration: underline;
+  text-align: center;
+}
 /*# sourceMappingURL=index.css.map */
