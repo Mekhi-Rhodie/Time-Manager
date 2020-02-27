@@ -4,7 +4,8 @@
 
 header {
   background-color: #6BFF7E;
-  box-shadow: inset -2px -2px 15px #070707;
+  -webkit-box-shadow: inset -2px -2px 15px #070707;
+          box-shadow: inset -2px -2px 15px #070707;
   padding: 2%;
   text-decoration: underline;
   text-align: center;
@@ -19,17 +20,26 @@ header #header-title {
   margin: 3% 25% 0% 15%;
 }
 
+.input {
+  display: inline;
+  font-weight: 300;
+}
+
+li {
+  color: #E2E2E2;
+}
+
 #main-content {
   border: 2px solid #6BFF7E;
   border-radius: 6px;
   background-color: #070707;
   padding: 2.5%;
-  box-shadow: 3px 3px 12px #070707;
+  -webkit-box-shadow: 3px 3px 12px #070707;
+          box-shadow: 3px 3px 12px #070707;
 }
 
 .form-head {
   font-size: 20px;
   font-weight: bold;
 }
-
 /*# sourceMappingURL=index.css.map */
