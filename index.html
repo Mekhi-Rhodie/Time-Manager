@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Time-Manager</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="author" content="Mekhi">
-        <meta name="keywords" content="Vue.js App, Time-Manager, To-do">
-        <meta name="description" content="This is a time manegment app utilizing Vue.js">
-        <link rel="stylesheet" href="styles/bootstrap.css">
-        <link rel="stylesheet" href="styles/index.css">
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    </head>
-    <body class="body">
-        <header>
-            <div id="header-content">
-                <h1 id="header-title">Time-Manager</h1>
-            </div>
-        </header>
-        <div class="container">
-            <main class="col-lg-10">
-                <form>
-                    <div class="form-group">
-                        <label class="form-head" for="to-do">To-Do: </label>
-                        <input type="text" class="form-control" id="to-do" name="to-do">
-                        <button id="to-do-submit" type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </form>
-                <div id="main-content">
-                    
-                </div>
-            </main>
+
+<head>
+    <title>Time-Manager</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mekhi">
+    <meta name="keywords" content="Vue.js App, Time-Manager, To-do">
+    <meta name="description" content="This is a time manegment app utilizing Vue.js">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body class="body">
+    <header>
+        <div id="header-content">
+            <h1 id="header-title">Time-Manager</h1>
         </div>
-        <script src="scripts/index.js"></script>
-        <script src="scripts/bootstrap.js"></script>
-    </body>
+    </header>
+    <div class="container">
+        <main class="col-lg-10">
+            <form>
+                <div class="form-group">
+                    <label class="form-head" for="to-do">To-Do: </label>
+                    <div class="form">
+                        <input type="text" class="form-control" id="to-do" name="to-do">
+                        <button id="to-do-submit" type="submit" class="btn btn-light">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <div id="main-content">
+
+            </div>
+        </main>
+    </div>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+</body>
+
 </html>
