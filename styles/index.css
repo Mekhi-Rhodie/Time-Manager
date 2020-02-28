@@ -17,7 +17,7 @@ header #header-title {
 }
 
 .container {
-  margin: 3% 25% 0% 15%;
+  margin: 3% 25% 2% 15%;
 }
 
 .input {
@@ -34,8 +34,10 @@ li {
   background-color: #E2E2E2;
   padding: 10px;
   border-radius: 8px;
-  margin: 15px;
+  margin: 25px;
   list-style-type: none;
+  -webkit-box-shadow: 0.5px 0.5px 5px white;
+          box-shadow: 0.5px 0.5px 5px white;
 }
 
 #main-content {
