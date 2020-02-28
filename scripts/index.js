@@ -1,17 +1,17 @@
-new Vue ({
+new Vue({
     el: "main",
     data: {
         message: "",
         todo: "",
         todos: [],
-        input: "",
+        input: ""
     },
     methods: {
-        reference: function(){
+        reference: function () {
             const ref = this.$refs.input.value
             console.log(ref)
             this.todos.push(ref)
-            console.clear()
+            this.message = ""
             console.log(this.todos)
         }
     }
