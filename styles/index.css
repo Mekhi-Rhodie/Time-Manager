@@ -38,6 +38,8 @@ li {
   list-style-type: none;
   -webkit-box-shadow: 0.5px 0.5px 5px white;
           box-shadow: 0.5px 0.5px 5px white;
+  text-align: center;
+  font-size: 20px;
 }
 
 #main-content {
