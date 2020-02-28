@@ -13,6 +13,11 @@ new Vue({
             this.todos.push(ref)
             this.message = ""
             console.log(this.todos)
+        },
+        closeToDo: function (todo) {
+            const todoIndex = this.todos.indexOf(todo);
+            this.todos.splice(todoIndex, 1);
         }
     }
 })
+
