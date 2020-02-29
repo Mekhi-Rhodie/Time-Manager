@@ -26,7 +26,7 @@
                     <label class="form-head" for="to-do">To-Do: <p class="input">{{message}}</p></label>
                     <div class="form">
                         <input v-model="message" type="text" class="form-control" ref="input" id="to-do" name="to-do"
-                            minlength="5" maxlength="85">
+                            minlength="5" maxlength="80">
                         <button v-on:click="reference()" v-on:click.prevent="" id="to-do-submit" type="submit"
                             class="btn btn-light">Submit</button>
                     </div>
