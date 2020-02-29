@@ -24,9 +24,10 @@
             <form>
                 <div class="form-group">
                     <label class="form-head" for="to-do">To-Do: <p class="input">{{message}}</p></label>
+                    <p id="character-counter">Characters: {{characters}}</p>
                     <div class="form">
                         <input v-model="message" type="text" class="form-control" ref="input" id="to-do" name="to-do"
-                            minlength="5" maxlength="80">
+                            minlength="5" maxlength="75">
                         <button v-on:click="reference()" v-on:click.prevent="" id="to-do-submit" type="submit"
                             class="btn btn-light">Submit</button>
                     </div>
@@ -39,6 +40,7 @@
                             name="checkbox">
                         {{todo}}
                         <button class="btn btn-danger" v-on:click="closeToDo(todo)" id="close-todo">X</button>
+                        <sub><b>Time Created: </b>{{time}}</sub>
                     </li>
                 </ul>
             </div>
