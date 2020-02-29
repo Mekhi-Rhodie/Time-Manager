@@ -4,7 +4,9 @@ new Vue({
         message: "",
         todo: "",
         todos: [],
-        input: ""
+        todosCompleted: [],
+        input: "",
+        checked: false
     },
     methods: {
         reference: function () {
@@ -17,7 +19,10 @@ new Vue({
         closeToDo: function (todo) {
             const todoIndex = this.todos.indexOf(todo);
             this.todos.splice(todoIndex, 1);
+        },
+        todoComplete: function(todo) {
+            this.todosCompleted.push(todo)
+            console.log(this.todosCompleted)
         }
     }
 })
-
