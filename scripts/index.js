@@ -10,7 +10,6 @@ new Vue({
         todosCompleted: [],
         input: "",
         checked: false,
-        time: "",
     },
     methods: {
         reference: function () {
@@ -18,7 +17,6 @@ new Vue({
             this.todos.push(ref)
             this.message = ""
             this.characters = 76
-            this.time = new Date().toLocaleTimeString()
         },
         closeToDo: function (todo) {
             const todoIndex = this.todos.indexOf(todo);
