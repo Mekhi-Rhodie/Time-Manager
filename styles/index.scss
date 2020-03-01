@@ -67,7 +67,6 @@ li{
     display: grid;
     gap: 7px;
     grid-template-columns: auto 3fr 1fr;
-    grid-template-rows: 50px 20px;
 }
 
 #main-content{
@@ -85,7 +84,8 @@ li{
 
 #close-todo{
     width: 40px;
-    margin-left: 72%;
+    margin-left: 50%;
+    max-height: 40px;
 }
 
 .form-head{
