@@ -1,5 +1,3 @@
-
-
 new Vue({
     el: "main",
     data: {
@@ -17,11 +15,8 @@ new Vue({
     methods: {
         reference: function () {
             const ref = this.$refs.input.value
-            console.log(ref)
             this.todos.push(ref)
             this.message = ""
-            console.log(this.todos)
-            console.log(this.time)
             this.characters = 76
             this.time = new Date().toLocaleTimeString()
         },
@@ -31,13 +26,11 @@ new Vue({
         },
         todoComplete: function (todo) {
             this.todosCompleted.push(todo)
-            console.log(this.todosCompleted)
         },
         characterCount: function () {
             if (this.message.length > this.maxcharacter) {
                 this.remaincharactersText = "Exceeded " + this.maxcharacter + " characters limit.";
             } else {
-
                 var remainCharacters = this.maxcharacter - this.message.length;
                 this.remaincharactersText = remainCharacters;
             }
