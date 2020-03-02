@@ -65,7 +65,7 @@ li{
     font-size: 20px;
     display: grid;
     gap: 7px;
-    grid-template-columns: auto 4fr .1fr;
+    grid-template-columns: auto 3.5fr .1fr;
 }
 
 #main-content{
@@ -90,5 +90,34 @@ li{
     font: {
         size: 20px;
         weight: bold;
+    }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 550px){
+    .container{
+        margin: 3% 0% 2% 0%;;
+    }
+    li{
+        grid-template-columns: auto auto auto;
+    }
+    li{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 551px) and (max-width: 650px){
+    .container{
+       margin: 3% 0% 2% 0%;
+    }
+    li{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1500px){
+    .container{
+        margin: 3% 0% 2% 0%;
+     }  li{
+        grid-template-columns: auto auto auto;
     }
 }
