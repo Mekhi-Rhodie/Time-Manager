@@ -95,13 +95,9 @@ li {
     grid-template-columns: auto auto auto;
   }
 }
-@media only screen and (min-width: 1000px) and (max-width: 1500px) {
+@media only screen and (min-width: 1300px) and (max-width: 1500px) {
   .container {
-    margin: 3% 0% 2% 0%;
-  }
-
-  li {
-    grid-template-columns: auto auto auto;
+    margin: 3% 0% 2% 15%;
   }
 }
 /*# sourceMappingURL=index.css.map */
